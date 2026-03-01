@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rafly Fadhillah | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg:#f5f7fa;
+    --card:#ffffff;
+    --text:#1f2937;
+    --primary:#2563eb;
+}
+
+body.dark{
+    --bg:#0f172a;
+    --card:#1e293b;
+    --text:#f1f5f9;
+    --primary:#3b82f6;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    transition:0.3s ease;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.profile-img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid var(--primary);
+    margin-bottom:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+h1{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:var(--primary);
+    font-weight:500;
+}
+
+.btn{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    background:var(--primary);
+    color:white;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:500;
+}
+
+section{
+    margin:50px 0;
+}
+
+.section-title{
+    font-size:22px;
+    margin-bottom:20px;
+    border-left:5px solid var(--primary);
+    padding-left:10px;
+}
+
+.card{
+    background:var(--card);
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+ul{
+    margin-left:20px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+    font-size:14px;
+    opacity:0.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <img src="foto.png" alt="Foto Rafly" class="profile-img">
+    <h1>Rafly Fadhillah</h1>
+    <p class="subtitle">Mahasiswa S1 Informatika | Data Entry | Tech Enthusiast</p>
+    <button class="btn" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+</header>
+
+<section>
+    <h2 class="section-title">Tentang Saya</h2>
+    <div class="card">
+        Saya adalah mahasiswa S1 Informatika dengan pengalaman sebagai Data Entry di instansi pemerintahan.
+        Memiliki ketelitian tinggi dalam pengolahan dan validasi data, serta mampu bekerja secara individu maupun tim.
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Pendidikan</h2>
+    <div class="card">
+        <strong>S1 Informatika</strong><br>
+        Universitas Mulia Balikpapan (2019 - Sekarang)
+    </div>
+    <div class="card">
+        <strong>SMAN 1 Muara Jawa</strong><br>
+        Jurusan IPA (2017 - 2019)
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Pengalaman Kerja</h2>
+    <div class="card">
+        <strong>Data Entry - Kantor Pertanahan Kota Balikpapan</strong><br>
+        Juli 2022 - Oktober 2022
+        <ul>
+            <li>Menginput & memvalidasi data properti</li>
+            <li>Menjaga keakuratan dan keamanan database</li>
+            <li>Memeriksa kelengkapan dokumen</li>
+            <li>Menyediakan informasi kepada pihak terkait</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Keahlian</h2>
+    <div class="card">
+        <ul>
+            <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+            <li>Adobe Photoshop & Premiere Pro</li>
+            <li>CapCut</li>
+            <li>Pengolahan & Validasi Data</li>
+            <li>Komunikasi & Kerja Tim</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Kontak</h2>
+    <div class="card">
+        📧 rafly2k1@gmail.com <br>
+        📱 +62 85157373541 <br>
+        📍 Muara Jawa, Kalimantan Timur
+    </div>
+</section>
+
+<footer>
+    © 2026 Rafly Fadhillah | Professional Portfolio
+</footer>
+
+</div>
+
+<script>
+function toggleDarkMode(){
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
